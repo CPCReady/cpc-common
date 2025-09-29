@@ -8,6 +8,22 @@ YELLOW_BOLD='\e[1;33m'
 RESET='\e[0m'
 
 
+
+function print_logo() {
+  echo ""
+  echo "========================================================================="
+  echo
+  echo -e "${YELLOW_BOLD} ▞▀▖▛▀▖▞▀▖▛▀▖        ▌   ${RED}    ✴ ${GREEN}Created: ${RESET}© Destroyer 2025${RESET}" 
+  echo -e "${YELLOW_BOLD} ▌  ▙▄▘▌  ▙▄▘▞▀▖▝▀▖▞▀▌▌ ▌${RED}    ✴ ${GREEN}Version: ${RESET}$2${RESET}"
+  echo -e "${YELLOW_BOLD} ▌ ▖▌  ▌ ▖▌▚ ▛▀ ▞▀▌▌ ▌▚▄▌${RED}    ✴ ${GREEN}Github : ${RESET}https://github.com/CPCReady/$1${RESET}"
+  echo -e "${YELLOW_BOLD} ▝▀ ▘  ▝▀ ▘ ▘▝▀▘▝▀▘▝▀▘▗▄▘${RED}    ✴ ${GREEN}Doc    : ${RESET}https://cpcready.readthedocs.io/${RESET}" 
+  echo ""
+  echo "========================================================================="
+  echo
+}
+
+
+
 # Función para imprimir texto en color rojo.
 # Uso: __cpcready_echo_red "Este es un mensaje de error"
 function __cpcready_echo_red() {
